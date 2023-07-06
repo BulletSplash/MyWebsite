@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.mobile__option a {
+  color: var(--clr-light);
+  text-decoration: none;
+}
+
 .mobile__menu {
   display: flex;
   flex-direction: column;
@@ -26,4 +31,27 @@
 
 .show {
   display: flex;
+}
+
+.mobile__links {
+  font-size: var(--size-xs);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: color 0.3s text-decoration 0.3s transform 0.3s;
+}
+
+.mobile__links:hover {
+  color: var(--clr-rose);
+  text-decoration: underline overline 2px;
+  text-underline-offset: 0.5rem;
+  transform: translateY(-1px);
+}
+
+.mobile__links a {
+  text-decoration: none;
+}
+
+.mobile__links a:hover {
+  color: var(--clr-rose);
 }

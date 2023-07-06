@@ -45,6 +45,7 @@
 }
 
 .txtbox {
+  color: white;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 0.5rem;
