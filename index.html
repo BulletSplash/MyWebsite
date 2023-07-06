@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style/utils.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/components/header.css" />
+    <link rel="stylesheet" href="style/components/hero.css" />
+    <link rel="stylesheet" href="style/components/aboutme.css" />
+    <link rel="stylesheet" href="style/components/skills.css" />
+    <link rel="stylesheet" href="style/components/footer.css" />
+    <link rel="stylesheet" href="style/components/mobile-view.css">
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lawrence Blasco</title>
+  </head>
+  <body>
+    <header class="header" id="head">
+      <nav>
+        <ul class="header__menu">
+          <li class="header__link"><a href="#aboutme">About</a></li>
+          <li class="header__link"><a href="#skills">Skills</a></li>
+          <li class="header__link"><a href="#contacts">Contacts</a></li>
+          <li class="header__link"><a href="LogInPortal.html">Log-Out</a></li>
+          <li class="header__line"></li>
+          <li class="header__link">
+            <!-- icon management -->
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="hide">
+                <defs>
+                  <symbol id="sun">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                  </symbol>
+
+                  <symbol id="moon">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+            </div>
+
+            <button class="header__sun theme-toggle" id="icon">
+              <!-- show icon -->
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <use href="#sun"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__link">
+            <a href="resume.html" target="_blank">
+              <button class="btn">Resume</button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="option__bar" id="option__button">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </div>
+
+      </nav>
+    </header>
+
+    <div class="mobile__option">
+      <nav>
+        <ul class="mobile__menu">
+          <li class="header__link"><a id="mobile__links" href="#aboutme">About</a></li>
+          <li class="header__link"><a id="mobile__links" href="#skills">Skills</a></li>
+          <li class="header__link"><a id="mobile__links" href="#contacts">Contacts</a></li>
+          <li class="mobile__line"></li>
+          <li class="header__link">
+            <!-- icon management -->
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="hide">
+                <defs>
+                  <symbol id="sun">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                  </symbol>
+
+                  <symbol id="moon">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+            </div>
+
+            <button class="header__sun theme-toggle" id="icon">
+              <!-- show icon -->
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <use href="#sun"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__link">
+            <a href="resume.html" target="_blank">
+              <button class="btn">Resume</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="hero container">
+        <div class="hero__container">
+          <img
+            class="hero__img"
+            src="/images/ProfilePic.jpg"
+            alt="Profile Picture "
+          />
+          <h2 class="hero__subtitle">Hi, I'm Lawrence 👋</h2>
+          <h1 class="hero__title">
+            FRONT-END <br />
+            WEB DEVELOPER
+          </h1>
+          <hr />
+          <p class="hero__description">
+            a passionate <strong>front-end/ Fullstack </strong> web developer
+            and <strong> UI/UX </strong> enthusiast specialized in building
+            interactive websites/applications.
+          </p>
+        </div>
+      </section>
+
+      <section class="aboutme container" id="aboutme">
+        <h1 class="aboutme__subtitle">ABOUT ME</h1>
+        <hr />
+        <p class="aboutme__description">
+          Let me introduce myself, Hi! my name is
+          <strong>Lawrence Blasco</strong>, a first year student from Far
+          Eastern University <strong>(FEU)</strong> Institute of Technology, I'm
+          currently taking Bachelor of Science in Information Technology
+          Specializing in Animation and Game Development
+          <strong>(BSIT-AGD)</strong>. I'm <strong>19 years old</strong>, and I
+          live in Tanza, Cavite.
+        </p>
+        <hr />
+        <h1>HOBBIES</h1>
+        <hr />
+        <ul>
+          <li>
+            <p class="aboutme__description">
+              Playing Video Games such as <br /><a
+                class="aboutme__link"
+                href="https://playvalorant.com/en-sg/"
+                target="_blank"
+                >Valorant</a
+              >
+              ,
+              <a
+                class="aboutme__link"
+                href= "https://www.leagueoflegends.com/en-ph/"
+                target="_blank"
+                >League of Legends</a
+              >
+              ,
+              <a
+                class="aboutme__link"
+                href="https://www.ea.com/games/apex-legends/play-now-for-free"
+                target="_blank"
+                >Apex Legends</a
+              >,<br />and more.
+            </p>
+          </li>
+          <li>
+            <p class="aboutme__description">Programming Video Games and Systems</p>
+          </li>
+          <li>
+            <p class="aboutme__description">Reading Manga and Watching Anime</p>
+          </li>
+        </ul>
+        <hr />
+      </section>
+
+      <section class="skills container" id="skills">
+        <h1 class="skills__subtitle">SKILLS</h1>
+        <hr />
+        <ul>
+          <h1 class="skills__subtitle">Art</h1>
+          <li>Digital Illustration</li>
+          <li>3D Animation</li>
+          <h1 class="skills__subtitle">Programming Languages</h1>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <hr />
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__contacts">
+        <h1>Contacts</h1>
+        <h3>09177628154</h3>
+      </div>
+      <div class="footer__vr"></div>
+      <div class="footer__under">
+        <h4>@Lawrence Blasco</h4>
+        <a href="#head">GO TO TOP &#x2A3B</a>
+      </div>
+    </footer>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>

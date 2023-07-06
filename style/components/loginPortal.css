@@ -1,0 +1,57 @@
+.login {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login__container {
+  display: flex;
+  background-color: rgba(red, green, blue, 0.8);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 4%;
+  width: 30%;
+  backdrop-filter: blur(3px);
+  border: 2px solid var(--clr-light);
+}
+
+.login__container img {
+  width: 50%;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid var(--clr-light);
+  margin-bottom: 1rem;
+}
+
+.login__container form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notif {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.txtbox {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.btn {
+  width: 6rem;
+  border: none;
+}

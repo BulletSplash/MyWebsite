@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.table__container {
+  display: flex;
+  flex-direction: row;
+  color: orange;
+  text-align: center;
+}
+
+.imageContainer {
+  width: 200px;
+  height: 250px;
+  padding-bottom: 1rem;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.imageContainer:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+}
+
+.imageProjector {
+  display: flex;
+  margin-top: 1rem;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.mklogo {
+  max-width: 400px;
+  max-height: 400px;
+  background-color: var(--clr-dark);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.ignProjector {
+  height: 50px;
+  background-color: var(--clr-dark);
+  border: 4px solid orange;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: var(--clr-rose);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -200px;
+  transition: all 0.3s;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
