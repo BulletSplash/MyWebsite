@@ -59,6 +59,7 @@ section {
 .popup .popuptext {
   visibility: hidden;
   width: 400px;
+  height: auto;
   background-color: var(--clr-rose);
   color: #fff;
   text-align: center;
@@ -66,6 +67,7 @@ section {
   padding: 8px 0;
   position: absolute;
   z-index: 1;
+  flex-direction: column;
   bottom: 125%;
   left: 50%;
   margin-left: -200px;
