@@ -1,9 +1,8 @@
-body {
+section {
   display: flex;
-  padding: 2rem;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  margin: 2rem;
 }
 
 .table__container {
@@ -27,7 +26,7 @@ body {
 }
 
 .imageProjector {
-  display: flex;
+  display: inline-flex;
   margin-top: 1rem;
   width: 400px;
   height: 400px;

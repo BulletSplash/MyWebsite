@@ -8,142 +8,256 @@
     <link rel="stylesheet" href="style/MortalKaibigan.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/utils.css" />
+    <link rel="stylesheet" href="style/components/mobile-view.css" />
+    <link rel="stylesheet" href="style/components/header.css" />
   </head>
   <body>
-    <div class="table__container">
-      <table>
-        <tr>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Ace.jpg"
-              name="Ace Andrew Dela Cruz"
-              ign="Triggered Ace"
-              relationship="Friend"
+    <header class="header" id="head">
+      <nav>
+        <ul class="header__menu">
+          <li class="header__link"><a href="home.html">Home</a></li>
+          <li class="header__line"></li>
+          <li class="header__link">
+            <!-- icon management -->
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="hide">
+                <defs>
+                  <symbol id="sun">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                  </symbol>
+
+                  <symbol id="moon">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+            </div>
+
+            <button class="header__sun theme-toggle" id="icon">
+              <!-- show icon -->
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <use href="#sun"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <div class="option__bar" id="option__button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Boriz.jpg"
-              name="Tristan Boriz Eustaquio"
-              ign="Devote to Tristan"
-              relationship="Friend"
-            />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Drabert.jpg"
-              name="Malvin Gao"
-              ign="Sprinuts"
-              relationship="Friend"
-            />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Kerby.png"
-              name="Kerby Guevarra"
-              ign="ZeroKarby"
-              relationship="Friend"
-            />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Stephen.jpg"
-              name="Stephen Alcala"
-              ign="Hashiro"
-              relationship="Friend"
-            />
-          </td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td><img class="mklogo" src="images/MKDragon.png" /></td>
-        </tr>
-        <tr>
-          <td class="ignProjector">
-            <h1 id="ignProjector">Mortal Kaibigan</h1>
-          </td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Gab.jpg"
-              name="Gabriel Navarro"
-              ign="Gaburieru"
-              relationship="Friend"
-            />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Josh.jpg"
-              name="Joshua Penero"
-              ign="DeathV23"
-              relationship="Friend"
-            />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Kyle.jpg"
-              name="Kyle Angelo Cardenas"
-              ign="kUwOno"
-              relationship="Friend"
-            />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Alle.jpg"
-              name="Allejandro Danyael Obispo"
-              ign="Allegend"
-              relationship="Friend"
-            />
-          </td>
-          <td>
-            <img
-              class="imageContainer"
-              id="imageItem"
-              src="images/Sam.jpg"
-              name="Sam Gabriel Vera"
-              ign="Bluesummers"
-              relationship="Friend"
-            />
-          </td>
-        </tr>
-      </table>
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mobile__option">
+      <nav>
+        <ul class="mobile__menu">
+          <li class="mobile__links">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="mobile__line"></li>
+          <li class="header__link">
+            <!-- icon management -->
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="hide">
+                <defs>
+                  <symbol id="sun">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                  </symbol>
+
+                  <symbol id="moon">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+            </div>
+
+            <button class="header__sun theme-toggle" id="icon">
+              <!-- show icon -->
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <use href="#sun"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="popup">
-      <span class="popuptext" id="myPopup">
-        <h3 id="name">Name:</h3>
-        <h3 id="ign">IGN:</h3>
-        <h3 id="relationship">Relationship:</h3>
-      </span>
-    </div>
+    <main>
+      <section>
+        <div class="table__container">
+          <table>
+            <tr>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Ace.jpg"
+                  name="Ace Andrew Dela Cruz"
+                  ign="Triggered Ace"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Boriz.jpg"
+                  name="Tristan Boriz Eustaquio"
+                  ign="Devote to Tristan"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Drabert.jpg"
+                  name="Malvin Gao"
+                  ign="Sprinuts"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Kerby.png"
+                  name="Kerby Guevarra"
+                  ign="ZeroKarby"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Stephen.jpg"
+                  name="Stephen Alcala"
+                  ign="Hashiro"
+                  relationship="Friend"
+                />
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td><img class="mklogo" src="images/MKDragon.png" /></td>
+            </tr>
+            <tr>
+              <td class="ignProjector">
+                <h1 id="ignProjector">Mortal Kaibigan</h1>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Gab.jpg"
+                  name="Gabriel Navarro"
+                  ign="Gaburieru"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Josh.jpg"
+                  name="Joshua Penero"
+                  ign="DeathV23"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Kyle.jpg"
+                  name="Kyle Angelo Cardenas"
+                  ign="kUwOno"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Alle.jpg"
+                  name="Allejandro Danyael Obispo"
+                  ign="Allegend"
+                  relationship="Friend"
+                />
+              </td>
+              <td>
+                <img
+                  class="imageContainer"
+                  id="imageItem"
+                  src="images/Sam.jpg"
+                  name="Sam Gabriel Vera"
+                  ign="Bluesummers"
+                  relationship="Friend"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
 
-    <img
-      class="imageProjector"
-      id="imageProjector"
-      src="images/ProfilePic.jpg"
-    />
+        <div class="popup">
+          <span class="popuptext" id="myPopup">
+            <h3 id="name">Name:</h3>
+            <h3 id="ign">IGN:</h3>
+            <h3 id="relationship">Relationship:</h3>
+          </span>
+        </div>
+
+        <img
+          class="imageProjector"
+          id="imageProjector"
+          src="images/ProfilePic.jpg"
+        />
+      </section>
+    </main>
 
     <script src="src/script2.js"></script>
   </body>
