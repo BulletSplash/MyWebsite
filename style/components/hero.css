@@ -27,7 +27,7 @@
 
 .hero__title {
   color: var(--clr-slate400);
-  text-shadow: 6px 6px var(--clr-slate600);
+  text-shadow: 1px 1px var(--clr-slate600);
   text-transform: uppercase;
   font-size: var(--size-3xl);
   letter-spacing: -0.05em;
@@ -61,6 +61,7 @@
 
   .hero__title {
     font-size: var(--size-6xl);
+    text-shadow: 3px 3px var(--clr-slate600);
   }
 
   .hero__description {
@@ -86,6 +87,7 @@
 
   .hero__title {
     font-size: var(--size-8xl);
+    text-shadow: 6px 6px var(--clr-slate600);
   }
 
   .hero__description {
