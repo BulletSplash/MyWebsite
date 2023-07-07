@@ -71,8 +71,10 @@ button {
 
 a:hover {
   color: var(--clr-rose);
+  text-shadow: 1px 1px var(--clr-indigo);
 }
 
 strong {
   color: var(--clr-indigo);
+  text-shadow: 1px 1px var(--clr-rose);
 }

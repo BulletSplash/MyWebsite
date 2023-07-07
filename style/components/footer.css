@@ -12,6 +12,7 @@
   justify-content: space-around;
   flex-direction: row;
   gap: 45%;
+  font-size: var(--size-s);
 }
 
 .footer__vr {
@@ -29,7 +30,25 @@
 }
 
 a {
-  color: var(--clr-light);
+  color: var(--clr-slate400);
   font-weight: 800;
   text-decoration: none;
 }
+
+/* xs */
+/* @media (min-width: 475px) { } */
+
+/* s */
+/* @media (min-width: 640px) { } */
+
+/* m */
+/* @media (min-width: 768px) { } */
+
+/* l */
+/* @media (min-width: 1024px) { } */
+
+/* xl */
+/* @media (min-width: 1280px) { } */
+
+/* 2xl */
+/* @media (min-width: 1536px) { } */
