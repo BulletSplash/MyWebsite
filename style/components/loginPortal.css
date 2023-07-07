@@ -17,7 +17,7 @@
   text-align: center;
   padding: 2rem 0;
   border-radius: 4%;
-  width: 30%;
+  width: 20rem;
   backdrop-filter: blur(3px);
   border: 2px solid var(--clr-light);
 }
@@ -56,3 +56,21 @@
   width: 6rem;
   border: none;
 }
+
+/* xs */
+/* @media (min-width: 475px) { } */
+
+/* s */
+/* @media (min-width: 640px) { } */
+
+/* m */
+/* @media (min-width: 768px) { } */
+
+/* l */
+/* @media (min-width: 1024px) { } */
+
+/* xl */
+/* @media (min-width: 1280px) { } */
+
+/* 2xl */
+/* @media (min-width: 1536px) { } */
