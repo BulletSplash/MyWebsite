@@ -62,6 +62,7 @@
   flex-direction: column;
   width: 20%;
   color: white;
+  text-shadow: 3px 3px 2px black;
   background-color: rgba(red, green, blue, 0.8);
   backdrop-filter: blur(4px);
   padding: 1rem;
@@ -78,4 +79,28 @@
   display: flex;
   background-color: white;
   height: 0.2rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: flex;
+  background-color: white;
+  box-shadow: 3px 3px 2px black;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.circle__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.shade {
+  background-color: var(--clr-slate800);
 }
