@@ -61,7 +61,11 @@
 /* @media (min-width: 475px) { } */
 
 /* s */
-/* @media (min-width: 640px) { } */
+@media (min-width: 640px) {
+  .login__container {
+    width: 30%;
+  }
+}
 
 /* m */
 /* @media (min-width: 768px) { } */
