@@ -9,16 +9,12 @@
 
 .footer__contacts {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 25%;
 }
 
 .footer__contacts h1 {
   font-size: var(--size-base);
-}
-
-.footer__contacts h3 {
-  font-size: var(--size-s);
 }
 
 .footer__under h3 {
@@ -35,7 +31,7 @@
 
 .footer__under {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 25%;
 }
 
@@ -44,6 +40,16 @@
   font-weight: 800;
   text-decoration: none;
   font-size: var(--size-s);
+}
+
+.footer__contacts img {
+  width: 2.5em;
+}
+
+.contact__logo {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
 }
 
 /* xs */
