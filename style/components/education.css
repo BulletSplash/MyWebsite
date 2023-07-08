@@ -9,6 +9,10 @@
   border-radius: 2rem;
 }
 
+.education h1 {
+  margin-top: 2rem;
+}
+
 .timeline {
   position: relative;
   max-width: 75rem;
@@ -69,9 +73,10 @@
 .timeline__logo {
   position: absolute;
   background-color: var(--clr-light);
+  border: 2px solid var(--clr-light);
   border-radius: 50%;
   width: 40px;
-  right: -20px;
+  right: -22px;
   top: 32px;
   z-index: 2;
 }
@@ -114,7 +119,7 @@ small {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 15px solid var(--clr-light);
-  right: -15px;
+  right: -14px;
 }
 
 .right__container-arrow {
@@ -126,5 +131,5 @@ small {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 15px solid var(--clr-light);
-  left: -15px;
+  left: -14px;
 }
